@@ -18,25 +18,29 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+      href="assets/icons/logo/favicon-32x32.png"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Animate CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Jane Doe | Web Developer</title>
+    <title>Josh Fiscalini | Software Professional</title>
+    
   </head>
 
   <body>
     <!-- Navbar -->
     <nav>
-      <h1>JANE DOE</h1>
+      <img id="header-logo" src="assets/icons/Personal Website Logo.png">
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#proExperience" class="nav-link">Experience</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <button class="burger-menu" id="burger-menu">
@@ -44,154 +48,286 @@
         <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
       </button>
     </nav>
-    
-    <p> 0024 </p>
 
     <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="assets/images/wfh_1.svg"
-        alt="jane-doe"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-          inventore tempore minus nemo, iste ullam illo laboriosam maiores
-          repudiandae quos!
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h1>Hi, I'm Josh Fiscalini</h1>
+        <p class="tagline">Software Engineer & Product Specialist</p>
+        <p class="intro">
+          I help businesses turn ideas into scalable software by combining technical depth with product clarity. Whether you're building a new app or improving an existing process, I can help you make it real.
         </p>
+        <a href="#contact" class="cta-button">Let's Connect</a>
       </div>
     </section>
 
-    <!-- More about -->
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
-      </p>
-    </section>
-
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-react-native.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
+    <!--About section-->
+    <section class="bio" id="about">
+      <div class="section-heading">
+        <h2>About</h2>
+      </div>
+      
+      <div class="about-content">
+        <p class="bio-text">
+          I’m a software engineer and technology enthusiast passionate about 
+          creating solutions to real-world problems through innovative software. I’ve built projects 
+          like AI-integrated calorie tracking platforms and custom language models, combining creativity 
+          with cutting-edge tools to address everyday challenges. With over a decade of experience across 
+          industries like accounting, customer credit and capital markets, I’ve developed a knack for 
+          transforming complex problems into tailored software solutions. The world is filled with challenges 
+          waiting to be solved, and I’m driven by the belief that technology can make a meaningful impact and 
+          I thrive on building software that makes a difference.
+        </p>
+        <div class="skills-grid">
+          <div class="skills__row animate__animated animate__fadeInDown">
+            <img
+              src="assets/icons/icons8-javascript.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-react-native.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-nodejs.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+  
+          <div class="skills__row animate__animated animate__fadeInDown">
+            <img
+              src="assets/icons/icons8-python.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-flask.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-postgresql.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+  
+          <div class="skills__row animate__animated animate__fadeInDown">
+            <img
+              src="assets/icons/icons8-html-5.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-css3.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-git.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Projects section -->
     <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="section-heading" id="project-heading">
+        <h2 class="projects-title">Projects</h2>
+      </div>
+      
       <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+
+        <div class="project-container" id="scheduler-project">
+          <div class="project-content">
+            <div class="project-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/ApptBooker_img_pg1.png" alt="Appointment Screenshot 1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/ApptBooker_img_pg2.png" alt="Appointment Screenshot 2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/ApptBooker_img_pg3.png" alt="Appointment Screenshot 3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/ApptBooker_img_pg4.png" alt="Appointment Screenshot 4" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/ApptBooker_img_pg5.png" alt="Appointment Screenshot 5" />
+                </div>
+              </div>
+              <!-- Add Pagination if you want dots -->
+              <div class="swiper-pagination"></div>
+              <!-- Add navigation buttons if you want arrows -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Appointment Booking Application From Scratch</h3>
+              <p>
+                Used React components to render an interactive calendar and appointment booking mechnisms from scratch without any additional libraries.
+                Utilized Google API to connect users to their Google accounts to book directly to their Google Calendars.
+              </p>
+              <a href="https://github.com/jpfiscal/appointment_booker" target="_blank" class="project-link">Learn More</a>
+            </div>
+          </div>
         </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+
+        <div class="project-container" id="kcalio-project">
+          <div class="project-content">
+            <div class="project-details">
+              <h3 class="project-title">KCALIO &#40;Calorie input output&#41;</h3>
+              <p>
+                Created a simple application that allows users to track their caloric intake against their
+                caloric expenditure by connecting to the FitBit API. Added bonus of using the ChatGPT API to 
+                allow users to upload a picture of their food and return with macro intake estimates.
+              </p>
+              <a href="https://github.com/jpfiscal/kcal_io" target="_blank" class="project-link">Learn More</a>
+            </div>
+            
+            <div class="project-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/kcalio_img_login.png" alt="Appointment Screenshot 1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/kcalio_img_dashboard.png" alt="Appointment Screenshot 2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/kcalio_img_logMeal_GPT.png" alt="Appointment Screenshot 3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/kcalio_img_logWt.png" alt="Appointment Screenshot 4" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/kcalio_img_logActivity.png" alt="Appointment Screenshot 5" />
+                </div>
+              </div>
+              <!-- Add Pagination if you want dots -->
+              <div class="swiper-pagination"></div>
+              <!-- Add navigation buttons if you want arrows -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          
         </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+
+        <div class="project-container" id="twitter-project">
+          
+          <div class="project-content">
+            <div class="project-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/twitterClone_img_login.png" alt="Appointment Screenshot 1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/twitterClone_img_dashboard.png" alt="Appointment Screenshot 2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/twitterClone_img_profile.png" alt="Appointment Screenshot 3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/twitterClone_img_newMsg.png" alt="Appointment Screenshot 4" />
+                </div>
+              </div>
+              <!-- Add Pagination if you want dots -->
+              <div class="swiper-pagination"></div>
+              <!-- Add navigation buttons if you want arrows -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Twitter Clone</h3>
+              <p class="project-details">
+                Created a Twitter Clone using Flask, jQuery, Bootstrap and Popper.
+              </p>
+              <a href="https://github.com/jpfiscal/twitter_clone" target="_blank" class="project-link">Learn More</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Experience Section-->
+    <section class="proExperience" id="proExperience">
+      <div class="section-heading">
+        <h2>Professional Experience</h2>
+      </div>
+      
+      <div class="experience-container">
+        <ul>
+          <li>
+            <div class="expBox">
+              <div class="duration">
+                <header aria-label="2019 to Present">2019 - present</header>
+              </div>
+              <div class="expDesc">
+                <h3>Senior Business Systems Consultant @ CIBC</h3>
+                <p>
+                  Liased between development team and business stakeholders in both Capital Markets and Treasury space 
+                  in order to build custom software solutions for the business.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="expBox">
+              <div class="duration">
+                <header aria-label="2015 to 2018">2015 - 2018</header>
+              </div>
+              <div class="expDesc">
+                <h3>Senior Process Manager - Payment & Accounting Operations @ Capital One</h3>
+                <p>
+                  Managed business processes for payment disbursements and accounting reconcilliation operations for the Canadian
+                  Customer Credit division.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="expBox">
+              <div class="duration">
+                <header aria-label="2014 to 2015">2014 - 2015</header>
+              </div>
+              <div class="expDesc">
+                <h3>Implentation Consultant @ Delbridge Solutions (Formerly Obero Solutions)</h3>
+                <p>
+                  Implemented accounting software to help businesses automate accounting reporting.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </section>
+
     <!-- Contact section -->
     <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
+      <div class="section-heading">
+        <h2>Get In Touch With Me</h2>
+      </div>
       <div class="contact-form-container">
         <div class="contact-form">
-          <form action="https://formspree.io/f/xyylnggw" method="POST">
+          <form action="https://formspree.io/f/mblylpob" method="POST">
             <div class="form-control">
               <label for="name">Name</label>
               <input
@@ -226,6 +362,10 @@
                 required
               ></textarea>
             </div>
+
+            <!--Hidden field for subject-->
+            <input type="hidden" name="_subject" id="subject" value="Inquiry from portfolio site" />
+
             <input
               type="submit"
               value="Submit"
@@ -233,59 +373,44 @@
               class="submit-btn"
             />
           </form>
+
+          <!--success message container-->
+          <div id="form-status"></div>
         </div>
       </div>
     </section>
 
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitter-circled.gif"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
-    </div>
-
     <!-- Scroll to top -->
     <i class="scroll-up" id="scroll-up"
       ><img
-        src="assets/icons/icons8-upward-arrow.gif"
+        src="assets/icons/icons8-scroll-up-48.png"
         class="socicon up-arrow"
         alt=""
     /></i>
 
     <!-- Footer section -->
     <footer>
-      <p class="copy">&copy; Copyright 2021</p>
       <p class="copy">
-        Built with &#x2661; by
-        <a href="https://twitter.com/Ksound22" target="_blank"
-          >Kolade Chris (Ksound)</a
-        >
+        <a href="https://www.linkedin.com/in/joshfiscalini/" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin.svg"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+          id="linkedinIcon"
+      /></a>
+      <a href="https://github.com/jpfiscal" target="_blank">
+        <img src="assets/icons/icons8-github.svg" 
+        alt="Github" 
+        class="socicon"
+        id="gitIcon"
+      /></a>
       </p>
     </footer>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/form.js"></script>
 
     <!-- Ion icons scripts -->
     <script
@@ -296,5 +421,38 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const projectSliders = document.querySelectorAll('.swiper');
+
+      projectSliders.forEach(slider => {
+        new Swiper(slider, {
+          loop: true,
+          pagination: {
+            el: slider.querySelector('.swiper-pagination'),
+            clickable: true,
+          },
+          navigation: {
+            nextEl: slider.querySelector('.swiper-button-next'),
+            prevEl: slider.querySelector('.swiper-button-prev'),
+          },
+          slidesPerView: 1,
+          spaceBetween: 10,
+        });
+      });
+    </script>
+
+    <!-- on submit, place the name from field into the hidden input-->
+    <script>
+      const form = document.querySelector('form');
+      const nameField = document.getElementById('name');
+      const subjectField = document.getElementById('subject');
+
+      form.addEventListener('submit', function (e) {
+        // Update the hidden subject field before submitting
+        subjectField.value = `Inquiry from ${nameField.value} from portfolio site`;
+      });
+    </script>
   </body>
 </html>
